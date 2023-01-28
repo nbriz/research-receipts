@@ -1,0 +1,74 @@
+*::-moz-selection {
+  background-color: #000;
+  color: #fff;
+}
+
+*::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+   url('fonts/inconsolata-v20-latin-regular.woff2') format('woff2'),
+   url('fonts/inconsolata-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+   url('fonts/inconsolata-v20-latin-800.woff2') format('woff2'),
+   url('fonts/inconsolata-v20-latin-800.woff') format('woff');
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: red;
+  font-family: 'Inconsolata', monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.receipt {
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+  background-color: #fff;
+  padding: 30px;
+  max-width: 410px;
+  margin: 25px;
+  box-shadow: 0px 15px 23px rgba(0,0,0,0.5);
+}
+
+.receipt h1 {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 24px;
+  font-weight: 800;
+  overflow-wrap: break-word;
+}
+
+.receipt hr {
+  border-style: dashed;
+}
+
+.receipt p {
+  text-align: right;
+}
+
+.receipt a {
+  color: black;
+  text-decoration: none;
+}
+
+.delete {
+  cursor: pointer;
+}
